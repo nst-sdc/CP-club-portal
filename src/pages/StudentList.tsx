@@ -9,6 +9,30 @@ export default function StudentList() {
   const { isAuthenticated } = useAuthStore();
   const { students, setAddingStudent, removeStudent, toggleStudentStatus } = useAdminStore();
 
+  const mockStats = {
+    1: {
+      totalSolved: 20,
+      codeforcesCount: 10,
+      csesCount: 10,
+      weeklyProgress: [1, 2, 3, 4, 5, 6, 7],
+      attemptDistribution: [1, 2, 3, 4, 5, 6, 7],
+    },
+    2: {
+      totalSolved: 30,
+      codeforcesCount: 20,
+      csesCount: 10,
+      weeklyProgress: [1, 2, 3, 4, 5, 6, 7],
+      attemptDistribution: [1, 2, 3, 4, 5, 6, 7],
+    },
+    3: {
+      totalSolved: 40,
+      codeforcesCount: 20,
+      csesCount: 20,
+      weeklyProgress: [1, 2, 3, 4, 5, 6, 7],
+      attemptDistribution: [1, 2, 3, 4, 5, 6, 7],
+    },
+  };  
+
   return (
     <div className="space-y-8">
       <div className="flex justify-between items-center">
