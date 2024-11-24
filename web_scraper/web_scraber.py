@@ -5,7 +5,7 @@ from urllib.parse import urljoin
 import os
 import time
 import json
-
+# dev club NST_SDC
 class CSESScraper:
     def __init__(self):
         self.base_url = 'https://cses.fi'
